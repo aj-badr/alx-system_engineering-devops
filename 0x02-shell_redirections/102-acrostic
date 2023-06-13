@@ -1,2 +1,2 @@
 #!/bin/bash
-sed -n 's/^\(.\).*/\1/p' <file_name> | tr -d '\n'; echo
+awk '{printf substr($0, 1, 1)} END{printf "\n"}'
