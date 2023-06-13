@@ -1,2 +1,2 @@
 #!/bin/bash
-echo bestchol=$((WATER + STIR))
+bestchol=$(echo "obase=bestchol; ibase=water; $WATER + stir" | bc)
